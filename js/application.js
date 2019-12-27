@@ -76,6 +76,7 @@ const displayModal = index => {
   `;
   overlay.classList.remove('hidden');
   modalContainer.innerHTML = html;
+  modalContainer.style.display = 'block';
   modalContainer.setAttribute('data-index', index);
   if (parseInt(index) === 0) {
     modalPrevious.style.display = 'none';
