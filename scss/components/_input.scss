@@ -1,0 +1,11 @@
+// ============================================
+// Input Partial
+// ============================================
+
+#search {
+  @extend %input;
+  margin-bottom: 30px;
+  @include breakpoint(768px) {
+    margin-bottom: 0;
+  }
+}

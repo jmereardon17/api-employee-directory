@@ -1,0 +1,50 @@
+// ============================================
+// Modal Partial
+// ============================================
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+}
+
+.hidden {
+	display: none;
+}
+
+.modal {
+	@extend %card;
+	@extend %card-modal;
+	& .card {
+		&__image {
+			flex-basis: 128px;
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		&__name {
+			font-size: 1.1em;
+		}
+		&__email,
+  	&__location,
+  	&__phone,
+  	&__address,
+  	&__birthday {
+    	font-size: .9em;
+		}
+		&__name,
+		&__email,
+		&__location {
+			margin-bottom: 12px;
+		}
+		&__phone,
+		&__address {
+			margin-bottom: 16px;
+		}
+		&__details p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

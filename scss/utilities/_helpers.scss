@@ -1,0 +1,73 @@
+// ============================================
+// Extends/Placeholders Partial
+// ============================================
+
+// Grid cards
+%card {
+  @include flex($dir: column);
+  @include breakpoint(768px) {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  border: $border;
+  border-radius: $border-sm;
+  background: $white;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .4s;
+  &:hover {
+    border-color: $color-border-hover;
+  }
+}
+
+// Grid card modals
+%card-modal {
+  @extend %card;
+  display: block;
+	padding: 50px 40px;
+	position: relative;
+	max-width: 375px;
+	margin: 5% auto auto;
+  text-align: center;
+  cursor: auto;
+}
+
+// Modal buttons
+%modal-button {
+  -webkit-appearance: none;
+  outline: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.7em;
+  opacity: .18;
+  transition: opacity .4s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// input fields
+%input {
+  @include breakpoint(768px) {
+    max-width: 350px;
+  }
+  border: $border;
+  border-radius: 4px;
+  padding: 8px 10px;
+  transition: border .4s;
+  width: 100%;
+  display: block;
+  font-size: 0.85em;
+  color: $color-text;
+  &:focus {
+    outline: 0;
+    border-color: $color-border-hover;
+  }
+  &::placeholder {
+    color: $color-text;
+  }
+}

@@ -1,0 +1,33 @@
+// ============================================
+// Mixins Partial
+// ============================================
+
+// CSS Layout Mixins
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  @content;
+}
+
+@mixin grid($disp: grid, $columns: null, $rows: null, $gap: null) {
+  display: $disp;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+  @content;
+}
+
+@mixin breakpoint($break) {
+  @if length($break) == 1 {
+    @media (min-width: $break) {
+      @content;
+    }
+  }
+  @if length($break) == 2 {
+    @media (min-width: nth($break, 1)) and (max-width: nth($break, 2)) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// ============================================
+// Buttons Partial
+// ============================================
+
+// Modal buttons
+.modal {
+  &__close {
+    @extend %modal-button;
+    top: 8px;
+    right: 50px;
+    color: $grey;
+    text-shadow: 0 1px 0 $grey;
+    opacity: 1;
+    font-size: 1em;
+  }
+  &__left {
+    @extend %modal-button;
+    top: 101px;
+    left: 30px;
+  }
+  &__right {
+    @extend %modal-button;
+    top: 101px;
+    right: 30px;
+  }
+}

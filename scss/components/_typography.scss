@@ -1,0 +1,31 @@
+// ============================================
+// Typography Partial
+// ============================================
+
+.title {
+  @include breakpoint(768px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  margin: 0 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.card {
+  &__name {
+    font-size: 1.05em;
+    color: #4A535A;
+  }
+  &__email,
+  &__location,
+  &__phone,
+  &__address,
+  &__birthday {
+    font-size: .85em;
+    color: $color-text;
+  }
+}
+

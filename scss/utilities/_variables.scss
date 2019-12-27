@@ -1,0 +1,22 @@
+// ============================================
+// Variables Partial
+// ============================================
+
+// Color Variables
+$white: #fff;
+$black: #000;
+
+$grey: lighten($black, 20%);
+$silver: #E1E1E1;
+
+$color-text: #979CA0;
+$color-border-hover: #4c7db6;
+
+// Border Variables
+$border: 1px solid $silver;
+$border-sm: 10px;
+
+$rounded: 50%;
+
+// File Path Variables
+$path-img: '../img';

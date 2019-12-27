@@ -1,0 +1,25 @@
+// ============================================
+// Grid Partial
+// ============================================
+
+// Header
+header {
+  margin-bottom: 30px;
+  @include breakpoint(768px) {
+    @include flex($just: space-between) {
+      align-items: center;
+    }
+  }
+}
+
+// Employee Grid
+
+.grid {
+  @include grid($columns: 1fr, $gap: 32px 40px);
+  @include breakpoint(768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

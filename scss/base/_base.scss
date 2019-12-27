@@ -1,0 +1,40 @@
+// ============================================
+// Base Styles Partial
+// ============================================
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; 
+  background: white;
+  color: #737373;
+  padding: 10vh 2.5% 5vh;
+  position: relative;
+  @include breakpoint(768px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  @include breakpoint(1400px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  @include breakpoint(2560px) {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  margin: 35px 0;
+  outline: 0;
+  border: none;
+  height: 1px;
+  background-color: #E3E3E3;
+}

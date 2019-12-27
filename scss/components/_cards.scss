@@ -1,0 +1,17 @@
+// ============================================
+// Cards Partial
+// ============================================
+
+.card {
+  @extend %card;
+  &__name {
+    margin: 0 0 10px;
+  }
+  &__email,
+  &__location {
+    margin: 0 0 10px;
+  }
+  & &__details p:last-child {
+    margin-bottom: 0;
+  }
+}
