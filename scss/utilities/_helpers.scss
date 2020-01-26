@@ -55,6 +55,8 @@
   @include breakpoint(768px) {
     max-width: 350px;
   }
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: $border;
   border-radius: 4px;
   padding: 8px 10px;

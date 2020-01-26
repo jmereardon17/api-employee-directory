@@ -46,6 +46,8 @@
 }
 
 #search {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: 1px solid #E1E1E1;
   border-radius: 4px;
   padding: 8px 10px;
